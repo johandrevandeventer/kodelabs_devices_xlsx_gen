@@ -18,6 +18,12 @@ def main():
 
     buildings_dataframes = data.build_dataframes(df)
 
+    devices_xlsx_path = files.get_devices_xlsx_path(config.DEVICES_XLSX_DIR_NAME)
+
+    print(devices_xlsx_path)
+
+    files.create_excel_files_from_dataframes(buildings_dataframes, devices_xlsx_path)
+
 
 if __name__ == "__main__":
     main()
