@@ -2,6 +2,7 @@
 
 from utils.files import files
 from config import config
+from data import data
 
 
 def main():
@@ -11,7 +12,11 @@ def main():
 
     df = files.read_excel_file(devices_details_path, "Details")
 
+    df = data.fix_building_names(df)
+
     print(df.head())
+
+    buildings_dataframes = data.build_dataframes(df)
 
 
 if __name__ == "__main__":
