@@ -14,13 +14,9 @@ def main():
 
     df = data.fix_building_names(df)
 
-    print(df.head())
-
     buildings_dataframes = data.build_dataframes(df)
 
     devices_xlsx_path = files.get_devices_xlsx_path(config.DEVICES_XLSX_DIR_NAME)
-
-    print(devices_xlsx_path)
 
     files.create_excel_files_from_dataframes(buildings_dataframes, devices_xlsx_path)
 
