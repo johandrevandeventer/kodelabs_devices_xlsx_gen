@@ -28,6 +28,12 @@ DATA_POINTS = [
     "Oil_Pressure",
     "CoolantTemp",
     "Fuel_Used",
+    "Fuel_Alarm",
+    "Fuel_avg_Eff_trip",
+    "Fuel_avg_trip",
+    "Fuel_Consump",
+    "Fuel_Eff_Acc",
+    "Fuel_Trip",
 ]
 
 POINT_NAMES = [
@@ -60,6 +66,12 @@ POINT_NAMES = [
     "Oil Pressure",
     "Coolant Temp",
     "Fuel Used",
+    "Fuel Alarm",
+    "Trip Average Fuel Efficiency",
+    "Trip average fuel",
+    "Fuel consumption",
+    "Fuel Efficiency KWh/L (accumulated)",
+    "Trip fuel",
 ]
 
 UNITS = [
@@ -87,6 +99,12 @@ UNITS = [
     "",
     "",
     "%",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     "",
     "",
     "",
@@ -124,6 +142,12 @@ KINDS = [
     "Number",
     "Number",
     "Number",
+    "Bool",
+    "Number",
+    "Number",
+    "Number",
+    "Number",
+    "Number",
 ]
 
 GAINS = [
@@ -156,4 +180,10 @@ GAINS = [
     1,
     1,
     0.1,
+    1,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    1,
 ]
