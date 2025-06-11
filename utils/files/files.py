@@ -3,6 +3,7 @@
 from pathlib import Path
 
 import pandas as pd
+import openpyxl
 
 
 def get_devices_details_path(file_name: str) -> Path:
