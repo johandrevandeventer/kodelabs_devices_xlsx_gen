@@ -1,8 +1,8 @@
 """Utility functions for file handling."""
 
-import pandas as pd
-
 from pathlib import Path
+
+import pandas as pd
 
 
 def get_devices_details_path(file_name: str) -> Path:
