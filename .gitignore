@@ -195,3 +195,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Specific project files
+devices_details.xlsx
